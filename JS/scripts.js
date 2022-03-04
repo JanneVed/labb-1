@@ -23,7 +23,8 @@ document.addEventListener('keyup', e => {
         let mySecondEasterEgg = document.createElement("dialog");
         mySecondEasterEgg.className = "hidden-Message";
         document.body.appendChild(mySecondEasterEgg);
-        let helloThere = document.createTextNode("Hello there. -Obi-Wan Kenobi Press Esc to close the dialog");
+        let helloThere = document.createElement("p");
+        helloThere.innerHTML = "Hello there." + "<br><br>" + "-Obi-Wan Kenobi" + "<br><br><br>" + "Press Esc to close the dialog";
         mySecondEasterEgg.appendChild(helloThere);
         secondRun++;
         mySecondEasterEgg.showModal();
