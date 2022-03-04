@@ -1,0 +1,333 @@
+/* -- imports -- */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+/* Order classes, ids and element as they appear on the html */
+
+/* #region General CSS */
+
+    /* -- Page -- */
+    * {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+    }
+    body, html {
+        height: 100vh;
+        width: 100vw;
+    }
+    main {
+        width: 100%;
+        height: 100%;
+        display: flex;
+    }
+    input {
+        display: none;
+    }
+    dialog {
+        margin: 5% auto;
+        padding: 3em;
+    }
+
+    /* -- Sidebar -- */
+
+    /* #sidebar don't fit: resize */
+    @media only screen and (max-width: 364px) {
+        #sidebar {
+            width: auto;
+        }
+    }
+    input:checked ~ #sidebar {
+        margin-left: -15em;
+    }
+    .sidebar-toggler {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: black;
+        color: white;
+        padding: 23px 5px;
+        border-radius: 0px 8px 8px 0px;
+        cursor: pointer;
+        margin-right: -24px;
+        z-index: 1;
+    }
+    #sidebar {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 15em;
+        height: 100%;
+        background-color: rgba(34, 34, 34, 0.5);
+        display: flex;
+        flex-direction: column;
+        z-index: 1;
+    }
+    #sidebar header {
+        background-color: black;
+        text-align: center;
+        padding: 10px 0px;
+        display: inline;
+    }
+    #sidebar header h1 {
+        text-align: center;
+        color: white;
+        border-style: solid;
+        border-color: red;
+        border-radius: 10px;
+        margin: 0 auto;
+        width: fit-content;
+        padding: 4px 5px;
+    }
+    #sidebar nav {
+        padding: 10px;
+        flex-grow: 1;
+    }
+    nav .link-list {
+        list-style: none;
+        font-size: 18px;
+    }
+    .link-list a {
+        text-decoration: none;
+        color: white;
+    }
+    .link-list .active-page {
+        background-color: white;
+        color: black;
+        padding: 0px 5px;
+    }
+    .link-list:last-child li{
+        margin-left: 7px;
+        color: white;
+    }
+    #sidebar footer {
+        margin-bottom: 0;
+        width: 100%;
+        background-color: black;
+        color: white;
+    }
+    footer h4 {
+        text-align: center;
+    }
+    footer h3 {
+        margin-top: 5px;
+        text-align: center;
+    }
+
+    /* -- Content Page -- */
+
+    /* .Content don't fit: resize */
+    @media only screen and (max-width: 500px) {
+        main #content-page .content {
+            width: 100%;
+        }
+    }
+
+    #content-page {
+        background-color: grey;
+        position: relative;
+        width: 100%;
+        overflow: auto;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    #content-page header {
+        width: 100%;
+        background-color: white;
+        text-align: center;
+        padding: 10px 0px;
+        position: sticky;
+        top: 0;
+        border-bottom: 2px solid black;
+        display: flex;
+    }
+    #content-page #phone-title {
+        display: none;
+    }
+    #content-page header h1 {
+        text-align: center;
+        border-style: solid;
+        border-color: red;
+        border-radius: 10px;
+        margin: 0 auto;
+        width: fit-content;
+        padding: 3px 5px 5px 5px;
+    }
+    #content-page .main {
+        flex-grow: 1;
+    }
+    .content {
+        padding: 10px;
+        font-family: sans-serif;
+        background-color: white;
+        width: 500px;
+        border-style: none solid solid none;
+        border-color: black;
+        border-radius: 10px;
+        margin: 5% auto;
+    }
+    .content p {
+        font-size: 20px;
+    }
+    #content-page #phone-footer {
+        display: none;
+    }
+/* #endregion General CSS */
+
+/* #region Portfolio Page */
+
+    .projects {
+        display: flex;
+    }
+    .project-image {
+    /* includes the projects own pages too */
+        width: 100%;
+        height: auto;
+    }
+    .portfolio h2 {
+        font-family: 'Roboto Mono', monospace;
+    }
+    .portfolio h3 {
+        color: black;
+        font-family: 'Roboto Mono', monospace;
+    }
+
+    /* project 1 modal */
+
+    #project1-modal{
+        visibility:hidden;
+        opacity:0;
+        position:absolute;
+        top:0;
+        left:0;
+        bottom:0;
+        right:0;
+        background-color:rgba(0,0,0,.4);
+        z-index:1;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        transition: .3s opacity ease-in-out;
+    }
+    #project1-modal:target{
+        visibility:visible;
+        opacity:1;
+        z-index:11;
+    }
+    #project1-modal .close{
+        position:absolute;
+        width:100%;
+        height:100%;
+        cursor:default;
+    }
+    #project1-modal .modal-content{
+        padding:10px;
+        display:flex;
+        position:relative;
+        justify-content:center;
+        align-items:center;
+        width:50%;
+        height: fit-content;
+        background-color:rgba(0,0,0,.8);
+    }
+
+    #project1-modal .modal-content p{
+        text-align:center;
+        color:white;
+        font-size:1.5rem;
+        font-family: 'Roboto Mono', monospace;
+    }
+
+    #project1-modal .modal-content a{
+        position: absolute;
+        color:white;
+        font-size:1.5rem;
+        top:0;
+        right:10px;
+        text-decoration: none;
+    }
+
+    /* project 2 modal */
+
+    #project2-modal{
+        visibility:hidden;
+        opacity:0;
+        position:absolute;
+        top:0;
+        left:0;
+        bottom:0;
+        right:0;
+        background-color:rgba(0,0,0,.4);
+        z-index:1;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        transition: .3s opacity ease-in-out;
+    }
+    #project2-modal:target{
+        visibility:visible;
+        opacity:1;
+        z-index:11;
+    }
+    #project2-modal .close{
+        position:absolute;
+        width:100%;
+        height:100%;
+        cursor:default;
+    }
+    #project2-modal .modal-content{
+        padding:10px;
+        display:flex;
+        position:relative;
+        justify-content:center;
+        align-items:center;
+        width: 50%;
+        height: fit-content;
+        background-color:rgba(0,0,0,.8);
+    }
+    #project2-modal .modal-content p{
+        text-align:center;
+        color:white;
+        font-size:1.5rem;
+        font-family: 'Roboto Mono', monospace;
+    }
+    #project2-modal .modal-content a{
+        position: absolute;
+        color:white;
+        font-size:1.5rem;
+        top:0;
+        right:10px;
+        text-decoration: none;
+    }
+    @media only screen and (max-width: 1000px) {
+        .projects {
+            flex-direction: column;
+        }
+    }
+/* #endregion Portfolio Page */
+
+/* #region CV Page */
+
+    #cv .content {
+        width: 50%;
+    }
+    .items {
+        margin-left: 2em;
+        font-weight: bold;
+    }
+    #cv .items p {
+        font-size: 16px;
+        font-weight: normal;
+        margin-left: 1em;
+    }
+    #cv .items span {
+        font-size: 16px;
+        font-weight: normal;
+        margin-left: 1em;
+    }
+    .sub-items {
+        margin-left: 2em;
+        font-weight: normal;
+    }
+
+/* #endregion CV Page */

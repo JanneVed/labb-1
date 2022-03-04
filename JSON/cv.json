@@ -1,0 +1,188 @@
+[
+    {
+        "heading":"Work Experiences",
+        "ulitems":[
+            {
+                "li": "Woodworker/Carpenter without professional certificates Less than 1 year experience",
+                "ulsubitems": [
+                    {
+                        "lisubitem": "KV Marin 2020-04 — 2020-07 (3 months)"
+                    },
+                    {
+                        "lisubitem": "KV Marin 2019-07 — 2019-08 (1 month)"
+                    },
+                    {
+                        "lisubitem": "KV Marin 2019-06 — 2019-06 (about 2 weeks)"
+                    }
+                ]
+            },
+            {
+                "li": "Store salesman/Employee, groceries, Less than 1 year experience",
+                "ulsubitems": [
+                    {
+                        "lisubitem": "ICA Maxi Hudiksvall, 2019-10 — 2019-12 (2 months)"
+                    },
+                    {
+                        "lisubitem":"Stora Coop i Hudiksvall, 2018-03 — 2018-05 (2 months)"
+                    }
+                ]
+            },
+            {
+                "li": "Store salesman/Employee, groceries, Less than 1 year experience & Warehouse worker, Less than 1 year experience",
+                "ulsubitems": [
+                    {
+                        "lisubitem": "Ahlsells, 2015-12 — 2015-12 (about 2 weeks)"
+                    }
+                ]
+            },
+            {
+                "li": "Installation electrician, Less than 1 year experience & Service electrician, installation, Less than 1 year experience",
+                "ulsubitems": [
+                    {
+                        "lisubitem": "Sörens el, 2017-05 — 2017-06 (1 month)"
+                    },
+                    {
+                        "lisubitem": "Per Sundins el service, 2015-11 — 2015-12 (1 month)"
+                    },
+                    {
+                        "lisubitem": "Reffelmansverket i Hudiksvall, 2015-10 — 2015-10 (about 2 weeks)"
+                    },
+                    {
+                        "lisubitem": "Elektra AB, 2014-11 — 2014-11 ()"
+                    }
+                    
+                ]
+            }
+        ]
+    },
+    {
+        "heading":"Educations",
+        "ulitems": [
+            {
+                "li": "System Devolopment.NET with AI-Qualification - Edugrade, 2021-09 — Ongoing",
+                "ulsubitems": [
+                    {
+                        "lisubitem": "Programming with C# and .NET"
+                    },
+                    {
+                        "lisubitem": "Practical Object-Oriented Programming"
+                    },
+                    {
+                        "lisubitem": "Programming of databases and SQL"
+                    },
+                    {
+                        "lisubitem": "Database and SQL programming"
+                    },
+                    {
+                        "lisubitem": "Project management and agile system development with SCRUM"
+                    },
+                    {
+                        "lisubitem": "Web development frontend with HTML5, CSS and Javascript"
+                    },
+                    {
+                        "lisubitem": "Web applications in C #, ASP.NET"
+                    },
+                    {
+                        "lisubitem":"Design patterns and architecture"
+                    },
+                    {
+                        "lisubitem":"AI components and machine learning in Microsoft Azure"
+                    },
+                    {
+                        "lisubitem": "DevOps"
+                    },
+                    {
+                        "lisubitem": "LIA (Learning at Work) 1"
+                    },
+                    {
+                        "lisubitem": "LIA (Learning at Work) 2"
+                    },
+                    {
+                        "lisubitem":"Master thesis"
+                    }
+                ]
+            },
+            {
+                "li": "IT Add-On Programmer/System Developer - Lexicon Gävleborg, 2021-02 — 2021-06 (4 months)",
+                "ulsubitems": [
+                    {
+                        "lisubitem": "Excel Basic and continuation"
+                    },
+                    {
+                        "lisubitem": "Intro to programming (Excel VBA)"
+                    },
+                    {
+                        "lisubitem": "Database theory and interface (Access)"
+                    },
+                    {
+                        "lisubitem": "The consulting role, Systems Science, Agile methods"
+                    },
+                    {
+                        "lisubitem": "MySql"
+                    },
+                    {
+                        "lisubitem": "HTML/CSS"
+                    },
+                    {
+                        "lisubitem": "C Sharp (C #)"
+                    },
+                    {
+                        "lisubitem": "JavaScript"
+                    },
+                    {
+                        "lisubitem": "GIT"
+                    }
+                ]
+            },
+            {
+                "li": "High school courses - Centrum för utveckling och lärande (CUL), 2018-11 — 2019-03 (3 months",
+                "ulsubitems": [
+                    {
+                        "lisubitem": "Math 2C"
+                    },
+                    {
+                        "lisubitem": "Swedish 2"
+                    },
+                    {
+                        "lisubitem": "English 6"
+                    }
+                ]
+            },
+            {
+                "li": "Electricity- and energy program - Bromangymnasiet, 2014-08 — 2017-06 (2 år, 10 månader)",
+                "ulsubitems": [
+                    {
+                        "lisubitem": "You gained the basic knowledge required to plan, install and maintain various systems and facilities in electrical engineering areas, such as energy, electronics, digital technology, data, programmable control systems and workshop technology. Electrical engineering provides knowledge in installing, maintaining and repairing electricity, communication- and alarm systems, as well as television and computer networks. At least 15 weeks of the training is workplace-based learning (APL)."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "heading": "Other Qualifications and Assignments",
+        "ulitems": [
+            {
+                "li":"Certificates of education, mobile platforms"
+            }
+        ]
+    },
+    {
+        "heading": "Degrees",
+        "ulitems": [
+            {
+                "li": "Approved vocational degree within electricity and energy"
+            }
+        ]
+    },
+    {
+        "heading": "Languages",
+        "ulitems": [
+            {
+                "li": "Swedish, Fluent"
+            },
+            {
+                "li": "English, Very good"
+            }
+        ]
+    }
+]

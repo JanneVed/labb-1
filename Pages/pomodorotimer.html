@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../CSS/general.css" rel="stylesheet">
+        <script type="text/javascript" src="../JS/scripts.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+        <title>Portfolio</title>
+    </head>
+    <body>
+        <main>
+            <input type="checkbox" id="toggler">
+            <section id="sidebar">
+                <header>
+                    <h1>Jan's Portfolio Page</h1>
+                <label for="toggler"><i class="fas fa-bars sidebar-toggler"></i></label>
+                </header>
+                <nav>
+                    <ul class="link-list">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="./aboutme.html">About Me</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                        <li><a href="./portfolio.html" class="active-page">Portfolio</a>
+                            <ul class="link-list">
+                                <li>⮡ <a href="./currencyconverter.html">Currency Converter</a></li>
+                                <li>⮡ <a href="./pomodorotimer.html" class="active-page">Pomodoro Timer</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="./cv.html">CV</a></li>
+                    </ul>
+                </nav>
+                <footer>
+                    <section>
+                        <h4>E-mail: janven.jv@gmail.com</h4>
+                        <h4>Number: 072-5515514</h4>
+                        <h4>Post Address: Stormyravägen 61</h4>
+                        <h4>Area: 824 54 HUDIKSVALL</h4>
+                    </section>
+                    <h3>Copyright© 2022 by Jan Vedin</h3>
+                </footer>
+            </section>
+            <section id="content-page">
+                <header>
+                    <h1 onclick="myFirstEasterEgg()">Portfolio</h1>
+                </header>
+                <div id="changeMe" class="main">
+                    <div class="content">
+                        <h2>Pomodoro Timer</h2>
+                        <br>
+                        <img src="../IMG/PomodoroTimer.jpg" alt="Pomodoro Timer" class="project-image">
+                        <p>This is your standard pomodoro timer, goes for 25 minutes then break 5 minutes then longer break after 4 times. This one also have a cycle counter incase you want to know how many cycles you've done. After first 4 cycles you get a 15 minutes break, then after 8 cycles you get a 30 minutes so it repeats until you reset it. You can also add your tasks to the list.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
